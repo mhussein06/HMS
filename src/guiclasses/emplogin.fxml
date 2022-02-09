@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: #808080;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiclasses.EmpLogin">
+   <children>
+      <AnchorPane prefHeight="209.0" prefWidth="1281.0">
+         <children>
+            <ImageView fitHeight="216.0" fitWidth="360.0" layoutX="478.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/download2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="4.0" layoutY="206.0" prefHeight="592.0" prefWidth="1280.0" style="-fx-background-color: #6f6e6e#6f6e6e;">
+         <children>
+            <ImageView fitHeight="597.0" fitWidth="1281.0" opacity="0.87" AnchorPane.bottomAnchor="-5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@../images/lobby_background.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="547.0" layoutY="166.0" prefHeight="66.0" prefWidth="167.0" text="Username">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="547.0" layoutY="297.0" prefHeight="66.0" prefWidth="163.0" text="Password">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <TextField fx:id="userField" layoutX="456.0" layoutY="245.0" prefHeight="50.0" prefWidth="350.0" />
+            <Button fx:id="cancelButton" layoutX="343.0" layoutY="461.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="204.0" style="-fx-border-color: #00269B#00269B #00269B#00269B; -fx-background-color: #00269B#00269B #00269B#00269B #00269B#00269B #00269B#00269B;" text="Back" textFill="WHITE">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Button>
+            <Button fx:id="loginButton" layoutX="723.0" layoutY="461.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="204.0" style="-fx-border-color: #00269B#00269B #00269B#00269B; -fx-background-color: #00269B#00269B #00269B#00269B #00269B#00269B #00269B#00269B;" text="Log In" textFill="WHITE">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="passField" layoutX="456.0" layoutY="369.0" prefHeight="50.0" prefWidth="350.0" />
+            <Label layoutX="432.0" layoutY="19.0" prefHeight="90.0" prefWidth="406.0" text="To access the admin page, please verify your identity" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

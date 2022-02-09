@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="174.0" prefWidth="1335.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="216.0" fitWidth="360.0" layoutX="450.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../UCheckIn/src/images/download2.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btn_refresh" layoutX="1177.0" layoutY="177.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="100.0" style="-fx-background-color: TRANSPARENT;" text="Refresh" textFill="#00289b" underline="true">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="708.0" prefWidth="1335.0">
+         <children>
+            <ImageView fitHeight="586.0" fitWidth="1285.0" opacity="0.85" AnchorPane.bottomAnchor="-3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-5.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@../images/hotel_backround.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="label_welcome" alignment="CENTER" layoutX="297.0" layoutY="14.0" prefHeight="48.0" prefWidth="644.0" text="Room Requests">
+               <font>
+                  <Font name="Trebuchet MS" size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="68.0" prefHeight="31.0" prefWidth="189.0" text="Room Service">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="59.0" layoutY="288.0" prefHeight="31.0" prefWidth="189.0" text="Food Service">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <ScrollPane layoutX="624.0" layoutY="95.0" prefHeight="256.0" prefWidth="635.0">
+               <content>
+                  <TableView fx:id="table_request" prefHeight="257.0" prefWidth="622.0">
+                    <columns>
+                        <TableColumn fx:id="col_reqID" prefWidth="77.46685791015625" text="Request ID" />
+                      <TableColumn fx:id="col_request" prefWidth="189.13427734375" text="Items Requested" />
+                      <TableColumn fx:id="col_time" prefWidth="162.068115234375" text="Time Requested" />
+                        <TableColumn fx:id="col_status" minWidth="0.0" prefWidth="120.1494140625" text="Status" />
+                        <TableColumn fx:id="col_cancel" prefWidth="67.8505859375" text="Cancel" />
+                    </columns>
+                  </TableView>
+               </content>
+            </ScrollPane>
+            <ScrollPane layoutX="30.0" layoutY="103.0" prefHeight="165.0" prefWidth="515.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="table_room" prefHeight="194.0" prefWidth="591.0">
+                           <columns>
+                              <TableColumn fx:id="col_namefree" prefWidth="420.2689552307129" text="Free Room Service" />
+                              <TableColumn fx:id="col_select" minWidth="0.0" prefWidth="75.73101806640625" text="Select" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+            <Button fx:id="btn_submit" layoutX="337.0" layoutY="505.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="173.0" style="-fx-background-color: #00269B#00269B;" text="Submit" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btn_back" layoutX="69.0" layoutY="505.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="173.0" style="-fx-background-color: #00269B#00269B;" text="Back" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <AnchorPane layoutX="31.0" layoutY="321.0" minHeight="0.0" minWidth="0.0" prefHeight="165.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="table_food" prefHeight="165.0" prefWidth="516.0">
+                     <columns>
+                        <TableColumn fx:id="col_namefood" prefWidth="313.4249725341797" text="Food Services" />
+                        <TableColumn fx:id="col_price" minWidth="0.0" prefWidth="122.4482421875" text="Price" />
+                        <TableColumn fx:id="col_selectfood" minWidth="0.0" prefWidth="78.55181884765625" text="Select" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+            <Label layoutX="798.0" layoutY="65.0" prefHeight="57.0" prefWidth="272.0" />
+            <Label layoutX="623.0" layoutY="356.0" prefHeight="64.0" prefWidth="421.0" text="Changed your mind? You can select requests that you want to cancel!" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_cancel" layoutX="839.0" layoutY="460.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="216.0" style="-fx-background-color: #00289B#00289B;" text="Cancel Selected" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="label_total" layoutX="1072.0" layoutY="373.0" prefHeight="30.0" prefWidth="181.0" text="Total: ">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
