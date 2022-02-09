@@ -42,11 +42,11 @@ The employee login page is accessible from here as well. Regular employees and a
 
 
 ## Technologies
-Langauges
+**Langauges**
 * Java
 * MySQL
 
-Tools and API's
+**Tools and API's**
 * Javafx
 * Javamail
 * JBCrypt
@@ -54,6 +54,19 @@ Tools and API's
 * SceneBuilder
 
 ## Setup
-This project runs on Java SE 14, so make sure you have atleast that version or newer. 
 
+**JavaFX**
 
+This project runs on Java SE 14, so make sure you have atleast that version or newer. Additionally, you will also need to install the appropiate javafx sdk file on your computer from https://gluonhq.com/products/javafx/, then add the necessary modules by running the following command into the VM arguments in run configurations for the splashgui class:
+
+  --module-path <path of sdk lib folder> --add-modules=javafx.controls
+
+**Database**
+ 
+To set up the database for the project, run the sql script file in the src folder on your local server. The project utilizes JDBC to access the sql database and access the database using the default username, "root", and password "". To change the username and password for database connection, edit the connection() method in the Controller class, within the object classes package. 
+  
+**Admin Login**
+
+To access the admin page, use the following credentials;
+Username: "Admin"
+Password: "password"
