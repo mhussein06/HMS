@@ -41,4 +41,19 @@ The employee login page is accessible from here as well. Regular employees and a
 
 
 
+## Technologies
+Langauges
+* Java
+* MySQL
+
+Tools and API's
+* Javafx
+* Javamail
+* JBCrypt
+* JDBC
+* SceneBuilder
+
+## Setup
+This project runs on Java SE 14, so make sure you have atleast that version or newer. 
+
 
