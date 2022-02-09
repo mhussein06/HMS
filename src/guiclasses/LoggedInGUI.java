@@ -180,8 +180,8 @@ public class LoggedInGUI implements Initializable {
 					try {
 						ResultSet rs = Controller.connection().executeQuery(sql);
 						while (rs.next()) {
-							if (rs.getInt("fulfilled") == 0) {
-								servicetotal -= rs.getFloat("item_price");
+							if (rs.getInt("fulfilled") == 1) {
+								servicetotal += rs.getFloat("item_price");
 							}
 						}
 					} catch (SQLException e1) {

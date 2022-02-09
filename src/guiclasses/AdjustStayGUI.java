@@ -47,7 +47,7 @@ public class AdjustStayGUI implements Initializable {
 		loader.setController(this);
 		try {
 			Parent root = loader.load();
-			Scene scene = new Scene(root, 1280, 1080);
+			Scene scene = new Scene(root, 1280, 800);
 			return scene;
 		} catch (IOException e) {
 			e.printStackTrace();

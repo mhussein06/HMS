@@ -34,7 +34,7 @@
                   <Image url="@../images/hotel_backround.jpg" />
                </image>
             </ImageView>
-            <Label layoutX="517.0" layoutY="27.0" prefHeight="63.0" prefWidth="262.0" text="Browse Rooms" textAlignment="CENTER">
+            <Label layoutX="517.0" layoutY="27.0" prefHeight="63.0" prefWidth="262.0" text="Select a Room" textAlignment="CENTER">
                <font>
                   <Font size="40.0" />
                </font>
