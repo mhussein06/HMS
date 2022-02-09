@@ -1,5 +1,4 @@
-/.metadata/
-/bin/
-.classpath
-.classpath
-.classpath
+/.DS_Store
+/guiclasses/
+/images/
+/objectclasses/
