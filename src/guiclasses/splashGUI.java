@@ -18,7 +18,6 @@ import javafx.stage.Stage;
 
 public class splashGUI extends Application implements Initializable{
 
-
 	@FXML
 	private Button bookButton;
 
